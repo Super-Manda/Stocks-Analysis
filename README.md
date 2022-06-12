@@ -1,10 +1,11 @@
-# Stocks Analysis Project Overview :sun_with_face:
+# Green Stocks Analysis Project Overview :sun_with_face:
 
 ## Purpose of This Analysis
 
-###  Steve has just obtained a finance degree, and his first clients are his parents, who foresee the days when fossil fuels will be depleted.  Steve's parents have invested their money in a green energy company known as DAQO Energy Corporation (DQ), and Steve is concerned that they’re not well diversified within their penchant for green stocks.  Steve has a 2017-2018 dataset of green energy companies and wants to see more research about DAQO and other comparable companies using macros.  From there, he wishes to have an Excel workbook that will accommodate future years of data over time.  This Excel file is found here: [VBA_Challenge](https://github.com/Super-Manda/Stocks-Analysis/blob/main/VBA_CHALLENGE.xlsm)
+###  
+Steve has just obtained a finance degree, and his first clients are his parents, who foresee the days when fossil fuels will be depleted.  Steve's parents have invested their money in a green energy company known as DAQO Energy Corporation (DQ), and Steve is concerned that they’re not well diversified within their penchant for green stocks.  Steve has a 2017-2018 dataset of green energy companies and wants to see more research about DAQO and other comparable companies using macros.  From there, he wishes to have an Excel workbook that will accommodate future years of data over time.  This Excel file is found here: [VBA_Challenge](https://github.com/Super-Manda/Stocks-Analysis/blob/main/VBA_CHALLENGE.xlsm)
 
-# Results :sun_with_face:
+# Results 
 
 ##  Comparison of Stock Performance Between 2017 and 2018
 
@@ -25,7 +26,8 @@ In 2018, these stocks surveyed had an average loss of 8.5%.  The correlation bet
 
 ##  Execution Times of the Original Script and the Refactored Script
 
-### The original script ran in .42 seconds for the year 2017 and .44 seconds for 2018.  In comparison, the refactored script ran in .06 seconds for the year 2017 and .07 seconds for the year 2018.  This is not a huge difference in practicality based on this dataset of green stocks, but if the dataset were so enormous in the future that it took time to process (* *e.g.: * * a dataset of every single stock presently available regardless of company type), then it would appear that the refactoring should allow the data to be processed much more efficiently.  
+### 
+The original script ran in .42 seconds for the year 2017 and .44 seconds for 2018.  In comparison, the refactored script ran in .06 seconds for the year 2017 and .07 seconds for the year 2018.  This is not a huge difference in practicality based on this dataset of green stocks, but if the dataset were so enormous in the future that it took time to process (* *e.g.: * * a dataset of every single stock presently available regardless of company type), then it would appear that the refactoring should allow the data to be processed much more efficiently.  
 
 **Here are the end results of the refactored timers:**
 
@@ -33,18 +35,20 @@ In 2018, these stocks surveyed had an average loss of 8.5%.  The correlation bet
 
 ![VBA_2018_CHALLENGE]( https://github.com/Super-Manda/Stocks-Analysis/blob/main/VBA_Challenge_2018.png)
 
-### The tickerIndex is used more often in the refactored code, which may contribute something toward this efficiency.  For example, at outset, “tickerIndex = 0” was created.  Then, in the refactored code, it becomes a much more active reference in the code, especially in sections 3A through 3D.     
+### 
+The tickerIndex is used more often in the refactored code, which may contribute something toward this efficiency.  For example, at outset, “tickerIndex = 0” was created.  Then, in the refactored code, it becomes a much more active reference in the code, especially in sections 3A through 3D.     
 
 Another example of efficiency is that the original script has a separate macro for the formatting, so Steve would have to click on multiple macros to achieve a user-friendly formatting.  With the refactored version, all Steve has to do is tell the input box whether he needs to analyze 2017 or 2018, and then everything will come up with the proper colors and percentages that he needs to see.
 
 ![VBA_REFACTORED_CODE_SAMPLE](https://github.com/Super-Manda/Stocks-Analysis/blob/main/VBA%20code%20sample.png)
 
 
-# Summary :sun_with_face:
+# Summary
 
 ## Advantages and/or Disadvantages of Refactoring Code  
 
-### As aforementioned, the primary advantage is that refactoring the VBA code will allow Steve to add to his dataset over time.  
+### 
+As aforementioned, the primary advantage is that refactoring the VBA code will allow Steve to add to his dataset over time.  
 
 In addition, refactoring can streamline or pare down things that were previously hard-coded (to no longer require as many separate updates).  Therefore, the next person to read the code will find it to be simpler and easy to follow at a quick glance.  It is also like doing an audit of which facets of the code are most important to a particular subroutine in terms of using less memory. 
 
@@ -52,15 +56,17 @@ The disadvantages of refactoring include that it’s something else that could p
 
 ##  Pros and Cons Applied to Refactoring the Original VBA Script 
 
-### In this exercise, there were some examples where hard-coded values were replaced and concatenated, such as the three lines of code that depended upon the year.  For example, these were changed from Range("A1").Value = "All Stocks (2018)" to instead say, Range("A1").Value = "All Stocks (" + yearValue + ")".  This is also an example of how Steve can grow his dataset over time.  As aforementioned, the tickerIndex and streamlined formatting will also be helpful to Steve in this refactored code.
+### 
+In this exercise, there were some examples where hard-coded values were replaced and concatenated, such as the three lines of code that depended upon the year.  For example, these were changed from Range("A1").Value = "All Stocks (2018)" to instead say, Range("A1").Value = "All Stocks (" + yearValue + ")".  This is also an example of how Steve can grow his dataset over time.  As aforementioned, the tickerIndex and streamlined formatting will also be helpful to Steve in this refactored code.
 
 In this challenge, there are instances where the instructions state to leave something alone, such as Sheets("All Stocks Analysis").Activate, and this appears to be so that the creation of bugs can be avoided.  It also sets up the steps to refactoring so that a skipped step does not hamper the overall code.  In addition, it’s true that Steve generally gets quick results regardless of the refactoring.
 
 ## Outside References
-### To do this analysis, the following links were used to research more about some of these companies: 
-https://en.wikipedia.org/wiki/Daqo_New_Energy
-https://en.wikipedia.org/wiki/Enphase_Energy 
-https://en.wikipedia.org/wiki/SolarEdge 
-https://en.wikipedia.org/wiki/SunPower 
-https://en.wikipedia.org/wiki/Sunrun 
-https://www.terraform.com/ 
+### 
+To do this analysis, the following links were used to research more about some of these companies: 
+- https://en.wikipedia.org/wiki/Daqo_New_Energy
+- https://en.wikipedia.org/wiki/Enphase_Energy 
+- https://en.wikipedia.org/wiki/SolarEdge 
+- https://en.wikipedia.org/wiki/SunPower 
+- https://en.wikipedia.org/wiki/Sunrun 
+- https://www.terraform.com/ 
