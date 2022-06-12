@@ -63,7 +63,7 @@ In this challenge, there are instances where the instructions state to leave som
 
 ## Outside References
 ### 
-To do this analysis, the following links were used to research more about some of these companies: 
+To do this analysis, the following links were used to research more about some of these companies for the 2017-2018 comparison section: 
 - https://en.wikipedia.org/wiki/Daqo_New_Energy
 - https://en.wikipedia.org/wiki/Enphase_Energy 
 - https://en.wikipedia.org/wiki/SolarEdge 
